@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><div style="padding: 20px 20px 20px 20px;text-align: center;font-size: 25px;"><p><a href="http://www.ecshop.com/index.php/Admin/Order/remind.html">提现提醒</a> <script type="text/javascript" charset="UTF-8"></script>

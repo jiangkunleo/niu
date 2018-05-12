@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="__Admin__/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__Admin__/js/jquery.js"></script>
+</head>
+
+
+
+
+
+<style>
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.tablelist{
+    border: 1px solid ;
+    border-collapse:collapse;
+}
+.tablelist td{
+    border:1px solid;
+    width:100px;
+    text-align:center;
+    font-size:12px;
+}
+.tablelist th{
+    width:100%;
+    text-align:center;
+}
+.odd{
+    background:#F5F5F5;
+    text-align:right;
+}
+.even{
+    background:#FFFFFF;
+    text-align:left;
+}
+
+</style>
+<body>
+    <div class="place">
+        <span>代理信息</span>
+    </div>
+    <div class="alert alert-danger" role="alert" style="font-size:16px">从8月1号开始，将升级区域代理结算方案，代理商可以获得更高利润、更快结算，通过微信账号：luck789000可以了解更多详情。燎原投资入驻将会为公司带来更多产品，更好体验，也将一如既往的保障代理商利益，和代理商携手发展。</div>
+
+<table class="tablelist">
+    <thead>
+        <tr class="" style="text-align:center;">
+        <th colspan="6" rowspan="6" headers="" scope="">我的基本信息</th>
+            <!-- <th>我的基本信息</th> -->
+        </tr>
+    </thead>
+    <tbody>
+    <volist name="list" id="vo">
+        <tr class="even">
+            <td>游戏账号ID：</td>
+            <td>{$vo.game_id}</td>
+            <td>游戏账号昵称：</td>
+            <td>{$vo.username}</td>
+            <td>真实姓名：</td>
+            <td>{$vo.real_name}</td>
+        </tr>
+        <tr class="odd">
+            <td>手机号：</td>
+            <td>{$vo.mobile}</td>
+            <td>微信：</td>
+            <td>{$vo.wechat}</td>
+            <td>元宝：</td>
+            <td>{$vo.gold}</td>
+        </tr>
+        <tr class="even">
+            <td>邀请码：</td>
+            <td>{$vo.code}</td>
+            <td>代理级别：</td>
+            <td>{$vo.level}</td>
+            <td>会员数：</td>
+            <td>{$vo.member}</td>
+        </tr>
+        <tr class="odd">
+            <td>注册代理时间：</td>
+            <td>{$vo.create_time}</td>
+            <td>上级代理邀请码：</td>
+            <td>{$vo.p_code}</td>
+            <td>上级代理用户昵称：</td>
+            <td>{$vo.p_name}</td>
+        </tr>
+        <tr class="even">
+            <td>最近登录时间：</td>
+            <td>{$vo.login_time}</td>
+            <td>最近登录IP：</td>
+            <td>{$vo.login_ip}</td>
+            <td>代理状态：</td>
+            <td>{$vo.status}</td>
+        </tr>
+        <tr class="odd">
+            <td>地址：</td>
+            <td colspan="5" rowspan="5" headers="">{$vo.address}</td>
+        </tr>
+        </volist>
+    </tbody>
+</table>
+
+
+</body>
+
+</html>
